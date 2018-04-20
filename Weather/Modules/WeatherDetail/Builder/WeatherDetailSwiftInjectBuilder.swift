@@ -13,7 +13,9 @@ struct WeatherDetailSwiftInjectBuilder: WeatherDetailBuilder {
     
     fileprivate func registerView() {
         let viewDescription = Container.sharedContainer.register(WeatherDetailView.self) { _ in
-            WeatherDetailViewController()
+            let storyboard = UIStoryboard(name: "WeatherDetail", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "WeatherDetailViewController") as! WeatherDetailViewController
+            return viewController
         }
         viewDescription.initCompleted { resolver, view in
             if let view = view as? WeatherDetailViewController {

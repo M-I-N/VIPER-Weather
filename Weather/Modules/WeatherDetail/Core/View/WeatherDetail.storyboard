@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Weather Detail View Controller-->
+        <scene sceneID="Xea-mw-6ZR">
+            <objects>
+                <viewController storyboardIdentifier="WeatherDetailViewController" id="f16-G7-kK7" customClass="WeatherDetailViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ial-PW-OFk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="smh-yR-vx9">
+                                <rect key="frame" x="0.0" y="228.5" width="375" height="210"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lmq-fC-Vhb">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25℃" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRi-io-PvW">
+                                        <rect key="frame" x="0.0" y="46" width="375" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yx3-Tn-LL6">
+                                        <rect key="frame" x="0.0" y="110" width="375" height="100"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="roh-Ci-x7b">
+                                                <rect key="frame" x="10" y="0.0" width="354" height="100"/>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="roh-Ci-x7b" secondAttribute="trailing" constant="10" id="1Fg-bM-UoY"/>
+                                            <constraint firstAttribute="height" constant="100" id="GtK-X2-i85"/>
+                                            <constraint firstAttribute="bottom" secondItem="roh-Ci-x7b" secondAttribute="bottom" id="QI5-YG-QJR"/>
+                                            <constraint firstItem="roh-Ci-x7b" firstAttribute="centerX" secondItem="Yx3-Tn-LL6" secondAttribute="centerX" placeholder="YES" id="aE7-Jo-pQn"/>
+                                            <constraint firstItem="roh-Ci-x7b" firstAttribute="leading" secondItem="Yx3-Tn-LL6" secondAttribute="leading" constant="10" id="eOp-Ef-deQ"/>
+                                            <constraint firstItem="roh-Ci-x7b" firstAttribute="top" secondItem="Yx3-Tn-LL6" secondAttribute="top" id="otb-tD-vsP"/>
+                                            <constraint firstItem="roh-Ci-x7b" firstAttribute="height" secondItem="Yx3-Tn-LL6" secondAttribute="height" id="wce-O9-7pF"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="smh-yR-vx9" firstAttribute="leading" secondItem="HGQ-Bm-2aC" secondAttribute="leading" id="88K-gL-JTu"/>
+                            <constraint firstItem="smh-yR-vx9" firstAttribute="centerY" secondItem="Ial-PW-OFk" secondAttribute="centerY" id="HvZ-GS-jVk"/>
+                            <constraint firstItem="smh-yR-vx9" firstAttribute="trailing" secondItem="HGQ-Bm-2aC" secondAttribute="trailing" id="O6j-lv-hts"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HGQ-Bm-2aC"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="Lmq-fC-Vhb" id="P6l-VT-veI"/>
+                        <outlet property="stackView" destination="roh-Ci-x7b" id="Tzl-gd-TtA"/>
+                        <outlet property="todayTemperatureLabel" destination="HRi-io-PvW" id="KFP-Xp-IHI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qmw-am-mUr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71.200000000000003" y="194.75262368815595"/>
+        </scene>
+    </scenes>
+</document>

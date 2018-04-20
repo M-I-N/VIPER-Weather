@@ -17,14 +17,12 @@
 		AF5CAE30208A3B0B00731906 /* WeatherDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CADF8208A3B0B00731906 /* WeatherDetailView.swift */; };
 		AF5CAE31208A3B0B00731906 /* WeatherForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CADFA208A3B0B00731906 /* WeatherForecastView.swift */; };
 		AF5CAE32208A3B0B00731906 /* WeatherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CADFB208A3B0B00731906 /* WeatherDetailViewController.swift */; };
-		AF5CAE33208A3B0B00731906 /* WeatherDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF5CADFC208A3B0B00731906 /* WeatherDetailViewController.xib */; };
 		AF5CAE34208A3B0B00731906 /* WeatherForecastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF5CADFD208A3B0B00731906 /* WeatherForecastView.xib */; };
 		AF5CAE35208A3B0B00731906 /* WeatherDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CADFF208A3B0B00731906 /* WeatherDetailInteractor.swift */; };
 		AF5CAE36208A3B0B00731906 /* WeatherDetailSwiftInjectBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CAE01208A3B0B00731906 /* WeatherDetailSwiftInjectBuilder.swift */; };
 		AF5CAE37208A3B0B00731906 /* WeatherDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CAE02208A3B0B00731906 /* WeatherDetailBuilder.swift */; };
 		AF5CAE38208A3B0B00731906 /* WeatherLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CAE06208A3B0B00731906 /* WeatherLocationView.swift */; };
 		AF5CAE39208A3B0B00731906 /* WeatherLocationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CAE07208A3B0B00731906 /* WeatherLocationPresenter.swift */; };
-		AF5CAE3A208A3B0B00731906 /* WeatherLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF5CAE09208A3B0B00731906 /* WeatherLocationViewController.xib */; };
 		AF5CAE3B208A3B0B00731906 /* WeatherLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CAE0A208A3B0B00731906 /* WeatherLocationViewController.swift */; };
 		AF5CAE3C208A3B0B00731906 /* WeatherLocationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CAE0C208A3B0B00731906 /* WeatherLocationInteractor.swift */; };
 		AF5CAE3D208A3B0B00731906 /* WeatherLocationSwiftInjectBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CAE0E208A3B0B00731906 /* WeatherLocationSwiftInjectBuilder.swift */; };
@@ -47,6 +45,7 @@
 		AF5CAE4E208A3B0B00731906 /* YahooWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CAE2A208A3B0B00731906 /* YahooWeatherService.swift */; };
 		AF5CAE4F208A3B0B00731906 /* SharedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CAE2B208A3B0B00731906 /* SharedContainer.swift */; };
 		AF5CAE51208A462B00731906 /* WeatherLocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5CAE50208A462B00731906 /* WeatherLocation.storyboard */; };
+		AF5CAE53208A492F00731906 /* WeatherDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5CAE52208A492F00731906 /* WeatherDetail.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,14 +63,12 @@
 		AF5CADF8208A3B0B00731906 /* WeatherDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailView.swift; sourceTree = "<group>"; };
 		AF5CADFA208A3B0B00731906 /* WeatherForecastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherForecastView.swift; sourceTree = "<group>"; };
 		AF5CADFB208A3B0B00731906 /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
-		AF5CADFC208A3B0B00731906 /* WeatherDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherDetailViewController.xib; sourceTree = "<group>"; };
 		AF5CADFD208A3B0B00731906 /* WeatherForecastView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherForecastView.xib; sourceTree = "<group>"; };
 		AF5CADFF208A3B0B00731906 /* WeatherDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailInteractor.swift; sourceTree = "<group>"; };
 		AF5CAE01208A3B0B00731906 /* WeatherDetailSwiftInjectBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailSwiftInjectBuilder.swift; sourceTree = "<group>"; };
 		AF5CAE02208A3B0B00731906 /* WeatherDetailBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailBuilder.swift; sourceTree = "<group>"; };
 		AF5CAE06208A3B0B00731906 /* WeatherLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherLocationView.swift; sourceTree = "<group>"; };
 		AF5CAE07208A3B0B00731906 /* WeatherLocationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherLocationPresenter.swift; sourceTree = "<group>"; };
-		AF5CAE09208A3B0B00731906 /* WeatherLocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherLocationViewController.xib; sourceTree = "<group>"; };
 		AF5CAE0A208A3B0B00731906 /* WeatherLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherLocationViewController.swift; sourceTree = "<group>"; };
 		AF5CAE0C208A3B0B00731906 /* WeatherLocationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherLocationInteractor.swift; sourceTree = "<group>"; };
 		AF5CAE0E208A3B0B00731906 /* WeatherLocationSwiftInjectBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherLocationSwiftInjectBuilder.swift; sourceTree = "<group>"; };
@@ -93,6 +90,8 @@
 		AF5CAE29208A3B0B00731906 /* ApixuWeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApixuWeatherService.swift; sourceTree = "<group>"; };
 		AF5CAE2A208A3B0B00731906 /* YahooWeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YahooWeatherService.swift; sourceTree = "<group>"; };
 		AF5CAE2B208A3B0B00731906 /* SharedContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedContainer.swift; sourceTree = "<group>"; };
+		AF5CAE50208A462B00731906 /* WeatherLocation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeatherLocation.storyboard; sourceTree = "<group>"; };
+		AF5CAE52208A492F00731906 /* WeatherDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeatherDetail.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,8 +191,8 @@
 			children = (
 				AF5CADFA208A3B0B00731906 /* WeatherForecastView.swift */,
 				AF5CADFB208A3B0B00731906 /* WeatherDetailViewController.swift */,
-				AF5CADFC208A3B0B00731906 /* WeatherDetailViewController.xib */,
 				AF5CADFD208A3B0B00731906 /* WeatherForecastView.xib */,
+				AF5CAE52208A492F00731906 /* WeatherDetail.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -247,8 +246,8 @@
 		AF5CAE08208A3B0B00731906 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AF5CAE09208A3B0B00731906 /* WeatherLocationViewController.xib */,
 				AF5CAE0A208A3B0B00731906 /* WeatherLocationViewController.swift */,
+				AF5CAE50208A462B00731906 /* WeatherLocation.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -440,8 +439,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF5CAE3A208A3B0B00731906 /* WeatherLocationViewController.xib in Resources */,
-				AF5CAE33208A3B0B00731906 /* WeatherDetailViewController.xib in Resources */,
+				AF5CAE51208A462B00731906 /* WeatherLocation.storyboard in Resources */,
+				AF5CAE53208A492F00731906 /* WeatherDetail.storyboard in Resources */,
 				AF5CADE6208A3A4A00731906 /* LaunchScreen.storyboard in Resources */,
 				AF5CAE34208A3B0B00731906 /* WeatherForecastView.xib in Resources */,
 				AF5CADE3208A3A4A00731906 /* Assets.xcassets in Resources */,

@@ -15,7 +15,11 @@ class WeatherLocationSwiftInjectBuilder: WeatherLocationBuilder {
     // MARK: Private
     
     fileprivate func registerView() {
-        let viewDescription = Container.sharedContainer.register(WeatherLocationView.self) { _ in WeatherLocationViewController()}
+        let viewDescription = Container.sharedContainer.register(WeatherLocationView.self) { _ in
+            let storyboard = UIStoryboard(name: "WeatherLocation", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "WeatherLocationViewController") as! WeatherLocationViewController
+            return viewController
+        }
         viewDescription.initCompleted { resolver, view in
             if let view = view as? WeatherLocationViewController {
                 view.presenter = resolver.resolve(WeatherLocationPresenter.self)
