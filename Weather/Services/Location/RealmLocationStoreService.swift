@@ -2,10 +2,10 @@ import Foundation
 import RealmSwift
 
 class RealmLocation: Object {
-    dynamic var locationId: String = ""
-    dynamic var name: String = ""
-    dynamic var region: String = ""
-    dynamic var country: String = ""
+    @objc dynamic var locationId: String = ""
+    @objc dynamic var name: String = ""
+    @objc dynamic var region: String = ""
+    @objc dynamic var country: String = ""
     var latitude = RealmOptional<Double>()
     var longitude = RealmOptional<Double>()
 }

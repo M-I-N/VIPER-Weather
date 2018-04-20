@@ -13,8 +13,6 @@
 		AF5CADE3208A3A4A00731906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5CADE2208A3A4A00731906 /* Assets.xcassets */; };
 		AF5CADE6208A3A4A00731906 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5CADE4208A3A4A00731906 /* LaunchScreen.storyboard */; };
 		AF5CAE2C208A3B0B00731906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5CADED208A3B0A00731906 /* Assets.xcassets */; };
-		AF5CAE2D208A3B0B00731906 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5CADEF208A3B0A00731906 /* LaunchScreen.storyboard */; };
-		AF5CAE2E208A3B0B00731906 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5CADF1208A3B0A00731906 /* Main.storyboard */; };
 		AF5CAE2F208A3B0B00731906 /* WeatherDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CADF7208A3B0B00731906 /* WeatherDetailPresenter.swift */; };
 		AF5CAE30208A3B0B00731906 /* WeatherDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CADF8208A3B0B00731906 /* WeatherDetailView.swift */; };
 		AF5CAE31208A3B0B00731906 /* WeatherForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CADFA208A3B0B00731906 /* WeatherForecastView.swift */; };
@@ -48,6 +46,7 @@
 		AF5CAE4D208A3B0B00731906 /* ApixuWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CAE29208A3B0B00731906 /* ApixuWeatherService.swift */; };
 		AF5CAE4E208A3B0B00731906 /* YahooWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CAE2A208A3B0B00731906 /* YahooWeatherService.swift */; };
 		AF5CAE4F208A3B0B00731906 /* SharedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5CAE2B208A3B0B00731906 /* SharedContainer.swift */; };
+		AF5CAE51208A462B00731906 /* WeatherLocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5CAE50208A462B00731906 /* WeatherLocation.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,8 +60,6 @@
 		AF5CADE5208A3A4A00731906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF5CADE7208A3A4A00731906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF5CADED208A3B0A00731906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AF5CADF0208A3B0A00731906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AF5CADF2208A3B0A00731906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		AF5CADF7208A3B0B00731906 /* WeatherDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailPresenter.swift; sourceTree = "<group>"; };
 		AF5CADF8208A3B0B00731906 /* WeatherDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailView.swift; sourceTree = "<group>"; };
 		AF5CADFA208A3B0B00731906 /* WeatherForecastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherForecastView.swift; sourceTree = "<group>"; };
@@ -140,7 +137,6 @@
 			isa = PBXGroup;
 			children = (
 				AF5CADED208A3B0A00731906 /* Assets.xcassets */,
-				AF5CADEE208A3B0A00731906 /* Base.lproj */,
 				AF5CADF3208A3B0B00731906 /* Modules */,
 				AF5CAE21208A3B0B00731906 /* Services */,
 				AF5CAE2B208A3B0B00731906 /* SharedContainer.swift */,
@@ -151,15 +147,6 @@
 				AF5CADE7208A3A4A00731906 /* Info.plist */,
 			);
 			path = Weather;
-			sourceTree = "<group>";
-		};
-		AF5CADEE208A3B0A00731906 /* Base.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				AF5CADEF208A3B0A00731906 /* LaunchScreen.storyboard */,
-				AF5CADF1208A3B0A00731906 /* Main.storyboard */,
-			);
-			path = Base.lproj;
 			sourceTree = "<group>";
 		};
 		AF5CADF3208A3B0B00731906 /* Modules */ = {
@@ -459,8 +446,6 @@
 				AF5CAE34208A3B0B00731906 /* WeatherForecastView.xib in Resources */,
 				AF5CADE3208A3A4A00731906 /* Assets.xcassets in Resources */,
 				AF5CAE2C208A3B0B00731906 /* Assets.xcassets in Resources */,
-				AF5CAE2E208A3B0B00731906 /* Main.storyboard in Resources */,
-				AF5CAE2D208A3B0B00731906 /* LaunchScreen.storyboard in Resources */,
 				AF5CADE1208A3A4900731906 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,22 +557,6 @@
 				AF5CADE5208A3A4A00731906 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		AF5CADEF208A3B0A00731906 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF5CADF0208A3B0A00731906 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		AF5CADF1208A3B0A00731906 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF5CADF2208A3B0A00731906 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -715,7 +684,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EJHMZ3UG6B;
 				INFOPLIST_FILE = Weather/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nayem.Weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -731,7 +703,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EJHMZ3UG6B;
 				INFOPLIST_FILE = Weather/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nayem.Weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

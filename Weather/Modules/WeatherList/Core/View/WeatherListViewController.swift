@@ -76,7 +76,7 @@ class WeatherListViewController: UITableViewController, WeatherListView {
         return UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(self.addWeatherLocation))
     }
     
-    func addWeatherLocation() {
+    @objc func addWeatherLocation() {
         self.presenter?.presentAddWeatherLocation()
     }
     

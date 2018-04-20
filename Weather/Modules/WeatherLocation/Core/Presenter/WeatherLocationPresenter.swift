@@ -40,7 +40,7 @@ class WeatherLocationDefaultPresenter: WeatherLocationPresenter {
     }
     
     func searchLocation(_ text: String) {
-        if text.characters.isEmpty {
+        if text.isEmpty {
             return
         }
         self.view?.displayLoading()

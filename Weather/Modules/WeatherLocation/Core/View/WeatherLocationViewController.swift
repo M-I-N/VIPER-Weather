@@ -28,7 +28,7 @@ class WeatherLocationViewController: UIViewController {
     
     // MARK: Actions
     
-    func cancelAction() {
+    @objc func cancelAction() {
         self.searchBar.resignFirstResponder()
         self.presenter?.cancelSearchForLocation()
     }
